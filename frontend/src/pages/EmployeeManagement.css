@@ -1,0 +1,107 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #4caf50; /* Green background */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
+  padding: 1rem 2rem; /* More padding for better spacing */
+  position: sticky; /* Keeps it at the top */
+  top: 0; /* Sticks it to the top */
+  z-index: 1000; /* Ensures it stays above other content */
+  width: 100%; /* Full width */
+}
+
+.navbar button {
+  background-color: #f1f1f1; /* Light grey background for buttons */
+  border: none;
+  color: #333;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #ddd; /* Darker grey when hovering */
+}
+
+/* Form and Button Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+form input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Employee Table Styling */
+table {
+  width: 100%; /* Full width */
+  border-collapse: collapse; /* Remove spacing between borders */
+  margin: 20px 0; /* Margin for spacing */
+}
+
+thead {
+  background-color: #4caf50; /* Green header */
+  color: white; /* White text */
+}
+
+th,
+td {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 12px; /* Padding for cells */
+  text-align: center; /* Center text */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light background for even rows */
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1; /* Light grey on hover */
+}
+
+td button {
+  margin: 5px; /* Margin for buttons */
+  padding: 5px 10px; /* Padding for buttons */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+td button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

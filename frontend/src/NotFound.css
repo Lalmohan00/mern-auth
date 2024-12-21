@@ -1,0 +1,100 @@
+/* Full-screen responsive container */
+.notfound-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* Starry sky background animation */
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.transparenttextures.com/patterns/stardust.png")
+    repeat;
+  z-index: 0;
+}
+
+.twinkling {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  animation: move-twinkling 200s linear infinite;
+  z-index: 0;
+}
+
+@keyframes move-twinkling {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -10000px 5000px;
+  }
+}
+
+/* Styling for 404 text */
+.notfound-title {
+  font-size: 12rem;
+  color: #ff6b6b;
+  z-index: 1;
+}
+
+/* Message styling */
+.notfound-message {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 20px 0;
+  z-index: 1;
+}
+
+/* Link back home styling */
+.notfound-link {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #ff6b6b;
+  border: 2px solid #ff6b6b;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.notfound-link:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+/* Responsive image */
+.notfound-image {
+  max-width: 400px;
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 40px;
+  z-index: 1;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .notfound-title {
+    font-size: 6rem;
+  }
+
+  .notfound-message {
+    font-size: 1.2rem;
+  }
+
+  .notfound-image {
+    width: 60%;
+  }
+}

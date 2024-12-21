@@ -1,0 +1,122 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: #4caf50; /* Green background */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Center items vertically */
+  padding: 1rem 2rem; /* More padding for better spacing */
+  position: sticky; /* Keeps it at the top */
+  top: 0; /* Sticks it to the top */
+  z-index: 1000; /* Ensures it stays above other content */
+  width: 100%; /* Full width */
+}
+
+.navbar button {
+  background-color: #f1f1f1; /* Light grey background for buttons */
+  border: none;
+  color: #333;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  flex: 1; /* Allow buttons to expand equally */
+}
+
+.navbar button:hover {
+  background-color: #ddd; /* Darker grey when hovering */
+  color: black;
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Product and Employee Tables */
+h2 {
+  color: #333;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* Table Styling */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+thead {
+  background-color: #4caf50;
+  color: white;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+/* Logout Button */
+button.logout {
+  background-color: #ff6347; /* Tomato red for logout */
+  color: white;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.logout:hover {
+  background-color: #ff4c29; /* Darker red on hover */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: stretch; /* Stretch buttons to full width */
+  }
+
+  .navbar button {
+    margin: 10px 0; /* Margin between buttons */
+    width: 100%; /* Full width for buttons on mobile */
+  }
+
+  table {
+    width: 100%; /* Full width for tables on mobile */
+  }
+}
